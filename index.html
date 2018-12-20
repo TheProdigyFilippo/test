@@ -2,13 +2,13 @@
 <html>
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131146929-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131253907-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-131146929-2');
+  gtag('config', 'UA-131253907-1');
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,47 +65,8 @@ p {
 
 
 <div class="container">
-    <ul>
-      <li><span id="days">0</span>Days</li>
-      <li><span id="hours">0</span>Hours</li>
-      <li><span id="minutes">0</span>Minutes</li>
-      <li><span id="seconds">0</span>Seconds</li>
-	</ul>
-    <h1>To 10th anniversary of Bitcoin</h1>
+    <h1>Coini.es</h1>
 </div>
-
-
-<script>
-var countDownDate = new Date("Jan 3, 2019 00:00:00").getTime();
-
-var daysElement = document.querySelector("#days");
-var hoursElement = document.querySelector("#hours");
-var minutesElement = document.querySelector("#minutes");
-var secondsElement = document.querySelector("#seconds");
-var containerElement = document.querySelector(".container");
-
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-    
-  var distance = countDownDate - now;
-    
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  daysElement.innerHTML = days;
-  hoursElement.innerHTML = hours;
-  minutesElement.innerHTML = minutes;
-  secondsElement.innerHTML = seconds;
-    
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("anniversary").innerHTML = "Happy birthday Bitcoin!";
-  }
-}, 100);
-</script>
 
 </body>
 </html>
